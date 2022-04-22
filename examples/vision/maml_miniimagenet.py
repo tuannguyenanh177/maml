@@ -152,17 +152,5 @@ def main(
     print('Meta Test Error', meta_test_error / meta_batch_size)
     print('Meta Test Accuracy', meta_test_accuracy / meta_batch_size)
 
-def parse_args():
-    import argparse
-
-    parser = argparse.ArgumentParser('MAML MiniImageNet')
-    # training settings
-    parser.add_argument('--iterations', type=int, default=60000, help='Number of iteration for meta train.') 
-
-    args = parser.parse_args()
-
-    return args
-
 if __name__ == '__main__':
-    args = parse_args()
-    main(num_iterations=args.iterations)
+    main(num_iterations=1000)
