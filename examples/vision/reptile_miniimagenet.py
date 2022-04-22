@@ -79,7 +79,7 @@ def main(
         train_ways=ways,
         test_samples=2*test_shots,
         test_ways=ways,
-        root='~/data',
+        root='/content/maml/examples/vision/data',
     )
 
     # Create model
